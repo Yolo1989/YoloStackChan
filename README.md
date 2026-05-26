@@ -1,32 +1,59 @@
-# StackChan Open-Source
+# YoloStackChan
 
-<img src="https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/K151_stack_chan_main_pictures_01.webp" width="60%">
+## 项目简介
 
-Here are StackChan related open-source resources, including source code of the StackChan firmware, remote controller firmware, mobile app (iOS and Android), and server. 
+YoloStackChan 是基于 StackChan 开源项目进行二次开发的 AI 桌面机器人项目。
 
-Update of this repo could be a little late than the released firmware and mobile app. 
+StackChan 是一款基于 M5Stack CoreS3 的桌面机器人，具备屏幕显示、语音交互、表情动画、舵机动作控制、无线通信、触摸交互、传感器感知等能力。原项目提供了机器人固件、遥控器固件、移动端 App 以及服务端相关开源资源，适合用于 AI Agent、桌面陪伴机器人、人机交互实验、物联网控制和机器人二次开发等场景。
 
-----
+本项目将在原有 StackChan 开源资源基础上进行定制化开发，主要用于学习、研究和扩展 AI 桌面机器人相关功能。
 
-<img src="https://cdn.shopify.com/s/files/1/0056/7689/2250/files/5a589623895f65487717894d9240f6b8.png" width="60%">
+## 项目目标
 
-**StackChan is a super kawaii AI desktop robot co-created by M5Stack and the user community.** It uses the M5Stack **flagship IoT development kit [CoreS3](https://docs.m5stack.com/en/core/CoreS3)** as its main controller, powered by an ESP32-S3 SoC featuring a 240 MHz dual-core processor, with 16MB Flash and 8MB PSRAM onboard, and supporting Wi-Fi and BLE. The main unit also integrates a 2.0-inch capacitive touch display with a high-strength glass cover, a 0.3 MP camera, a proximity & ambient light sensor, a 9-axis IMU (accelerometer + gyroscope + magnetometer), a microSD card slot, a 1W speaker, dual microphones, and power/reset buttons. 
+本项目主要用于以下方向的二次开发：
 
-The **robot body**, connected to the main unit, includes a USB-C interface for power and data, a 550 mAh battery, two feedback servos (360-degree continuous rotation on the horizontal axis and 90-degree movement on the vertical axis), two rows totaling 12 RGB LEDs, infrared transmitter and receiver, a three-zone touch panel, and a full-featured NFC module. 
+- StackChan 固件功能研究与修改
+- AI 桌面机器人交互逻辑开发
+- 表情、动作、语音等交互能力扩展
+- ESP32-S3 / M5Stack CoreS3 相关开发学习
+- 本地化功能适配与个性化功能开发
+- 移动端、服务端及机器人端联动功能探索
 
-The **factory firmware** is feature-rich, including an AI Agent, lively and expressive animations, ESP-NOW wireless remote control, and online app downloads. It can connect to a mobile app for video viewing, remote avatar control, and more, and also supports online updates (OTA). The product also supports programming via Arduino, UiFlow2, and other methods, and can connect to various expansion units in the M5Stack ecosystem, making it easy to implement a wide range of custom functions. 
+## 硬件基础
 
-> ⚠️ Do not forcibly rotate any movable parts connected to the motors by hand when you are unsure whether the motors are powered and under control, as this may cause hardware damage. 
+本项目主要基于 M5Stack CoreS3 及 StackChan 机器人本体进行开发。
 
-- Purchase link: [M5Stack Official Store](https://shop.m5stack.com/products/stackchan-kawaii-co-created-open-source-ai-desktop-robot) | [淘宝 Taobao](https://item.taobao.com/item.htm?id=1042238294510)
+CoreS3 集成了 ESP32-S3 主控芯片，支持 Wi-Fi、BLE、触摸屏、摄像头、IMU、麦克风、扬声器、microSD 卡等硬件能力。机器人本体包含舵机、RGB LED、触摸面板、红外、NFC、电池等模块，可用于实现丰富的桌面机器人交互功能。
 
-- Product document page: [English](https://docs.m5stack.com/en/StackChan) | [日本語](https://docs.m5stack.com/ja/StackChan) | [中文](https://docs.m5stack.com/zh_CN/StackChan)
+## 二次开发说明
 
-- Board support package: https://github.com/m5stack/StackChan-BSP
+本仓库用于个人学习和二次开发，后续可能会根据实际需求对以下内容进行修改和扩展：
 
-Thank you to the contributors of the StackChan community, especially: 
+- 固件代码结构整理
+- 机器人动作控制逻辑
+- 屏幕 UI 与表情动画
+- AI Agent 接入
+- 语音识别与语音合成
+- 本地服务端通信
+- 移动端或 Web 控制端适配
+- OTA 更新与远程配置能力
 
-| ![](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/avatar_stack_chan.jpg) | ![](https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/avatar_takao.jpg) |
-| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| [@stack_chan](https://x.com/stack_chan)                                          | [@mongonta555](https://x.com/mongonta555)                                   |
-| Shinya Ishikawa                                                                  | Takao Akaki                                                                 |
+## 注意事项
+
+请勿在不确定电机是否通电或受控的情况下，强行用手旋转机器人可动部件，否则可能造成硬件损坏。
+
+如果需要烧录、调试或修改固件，请先确认硬件型号、开发环境、依赖库版本和接线方式，避免因错误操作导致设备异常。
+
+## 联系方式
+
+项目维护者：Yolo1989
+
+邮箱：1052010627@qq.com
+
+电话：15696530926
+
+## 上游项目说明
+
+本项目基于 StackChan 相关开源资源进行学习和二次开发。
+
+如原始项目包含开源许可证、版权声明或第三方依赖说明，请保留对应的 LICENSE、NOTICE 或版权信息，并遵守原项目的开源协议。
